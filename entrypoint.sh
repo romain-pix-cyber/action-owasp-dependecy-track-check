@@ -38,7 +38,7 @@ case $LANGUAGE in
         fi
         pip install cyclonedx-bom
         path="bom.xml"
-        BoMResult=$(cyclonedx-py -o bom.xml)
+        BoMResult=$(cyclonedx-py requirements -o bom.xml)
         ;;
     
     "golang")
